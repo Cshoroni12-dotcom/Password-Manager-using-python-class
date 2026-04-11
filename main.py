@@ -1,8 +1,6 @@
-pass = input("you're app password>>")
-master_pass = pass
-class Acc:
-  def __init__(self, username, password, app):
-    self.username = username
-    self.password = password
-    self.app = app
-  
+class SimpleHash:
+    def hash(self, text):
+        h = 0
+        for ch in text:
+            h = (h * 31 + ord(ch)) % 1000000007
+        return str(h)
