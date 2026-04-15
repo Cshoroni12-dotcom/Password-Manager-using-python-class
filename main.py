@@ -3,7 +3,7 @@ class SimpleHash:
         h = 0
         for ch in text:
             h = (h * 31 + ord(ch)) % 1000000007
-        return str(h)
+        return str(h) # i don't like prep test
 class Acc:
     def __init__(self, username, password, app):
         self.username = username
