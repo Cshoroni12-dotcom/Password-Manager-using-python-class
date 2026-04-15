@@ -1,3 +1,4 @@
+#will I be able to understand class
 class SimpleHash:
     def hash(self, text):
         h = 0
